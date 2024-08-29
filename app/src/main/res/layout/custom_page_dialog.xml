@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.textfield.TextInputLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/diaTl"
+    android:padding="10dp"
+    android:hint="@string/go_to_page"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:imeOptions="actionSearch"
+        android:id="@+id/diaEt"/>
+</com.google.android.material.textfield.TextInputLayout>

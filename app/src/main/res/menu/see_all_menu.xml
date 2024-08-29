@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+  <item
+      android:id="@+id/goto_page"
+      android:title="@string/go_to_page"
+      app:showAsAction="always"
+      android:icon="@drawable/ic_find_page"
+      />
+  <item
+      android:id="@+id/goto_search"
+      android:title="@string/search"
+      app:showAsAction="ifRoom"
+      android:icon="@drawable/ic_search"
+      />
+  <item
+      android:id="@+id/goto_wl"
+      android:title="@string/watch_later_list"
+      app:showAsAction="ifRoom"
+      android:icon="@drawable/ic_watch_later"
+      />
+</menu>

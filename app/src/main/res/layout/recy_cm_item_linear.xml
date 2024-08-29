@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="7dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="5dp"
+
+    android:layout_marginBottom="5dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    style="?attr/materialCardViewElevatedStyle"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/linearRecyCmTvTitle"
+            tools:text="klaihjgfaoiijaoijgaoid"
+            style="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintEnd_toStartOf="@id/linearRecyCmTvRating"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:drawableStartCompat="@drawable/ic_rate"
+            android:id="@+id/linearRecyCmTvRating"
+            tools:text="8.9"
+            />
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintGuide_percent="0.35"
+            android:id="@+id/linearRecyCmGuide"
+            android:orientation="vertical"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/linearRecyCmGuide"
+            tools:ignore="ContentDescription"
+            tools:src="@tools:sample/backgrounds/scenic"
+            app:layout_constraintTop_toBottomOf="@id/linearRecyCmTvTitle"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="5dp"
+            android:id="@+id/linearRecyCmThumb"
+            app:layout_constraintDimensionRatio="1:1.5"
+            />
+
+        <TextView
+            android:id="@+id/linearRecyCmTvDesc"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="@id/linearRecyCmThumb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/linearRecyCmGuide"
+            app:layout_constraintTop_toTopOf="@id/linearRecyCmThumb"
+            android:ellipsize="end"
+            tools:text="@tools:sample/lorem/random" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
